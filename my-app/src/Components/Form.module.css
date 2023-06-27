@@ -21,7 +21,7 @@
   padding: 5px 10px;
   border: 2px solid #b1b1b1;
   color: #b1b1b1;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: Avenir;
   margin: 2.06rem auto;
   flex-shrink: 0;
@@ -56,4 +56,20 @@
   width: 7rem;
   height: 2.5625rem;
   flex-shrink: 0;
+  border: none;
+}
+
+.btnRegister {
+  background: white;
+  color: #ec7ab7;
+  border-radius: 5px;
+  width: 7rem;
+  height: 2.5625rem;
+  flex-shrink: 0;
+  border: 1px solid #ec7ab7;
+}
+
+.btnRegister:hover {
+  background: linear-gradient(180deg, #ec7ab7 0%, #ec7a7a 100%);
+  border: none;
 }
