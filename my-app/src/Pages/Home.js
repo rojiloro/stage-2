@@ -1,94 +1,38 @@
-import Button from "react-bootstrap/Button";
-import { Container, Row, Col, FormCheck } from "react-bootstrap";
-import cssModules from "../Components/Form.module.css";
-import Image from "react-bootstrap/Image";
+// import component
+import Jumbotron from "../Components/Jumbotron";
+import FormTiket from "../Components/FormTiket";
+import Rute from "../Components/Rute";
+
+// import react-bootstrap
+import { Container, Row, Col } from "react-bootstrap";
 
 function Home() {
   return (
     <>
-      <div className={cssModules.homeJumbotron}>
-        <Container>
-          <Row>
-            <Col>
-              <p className={cssModules.homeText}>Selamat Pagi, Ticket Seekers .</p>
-              <p className={cssModules.homeTextKedua}>Ingin Pulkam dengan Good Deal ?</p>
-              <p className={cssModules.homeTextKedua}>Masuk atau Daftar Sekarang ! !</p>
-            </Col>
-            <Col>
-              <Image src="../assets/img/iklan-1.png" className={cssModules.homeImage1} />
-              <Image src="../assets/img/iklan-2.png" className={cssModules.homeImage2} />
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div className={cssModules.homeTiketContainer}>
-        <Container>
-          <Row>
-            <Col sm={4} className={cssModules.tiketKolom}>
-              <div className={cssModules.tiketKotakOren}></div>
-              <div className={cssModules.tiketTag}>
-                <Image src="../assets/img/icon-train.png" className={cssModules.iconTrain} />
-                <p className={cssModules.tiketPtext}>Tiket Kereta Api</p>
-              </div>
-            </Col>
-            <Col sm={8}>
-              <p className={cssModules.tiketPtext2}>Tiket Kereta Api</p>
-              <Row>
-                <Col xl={5}>
-                  <div className={cssModules.tiketGrup}>
-                    <p className={cssModules.tiketPtext3}>Asal</p>
-                    <input className={cssModules.tiketInput} placeholder="Jakarta"></input>
-                  </div>
-                  <div>
-                    <p className={cssModules.tiketPtext3}>Tanggal Berangkat</p>
-                    <input type="Checkbox" className={cssModules.tiketCheckbox} />
-                    <p className={cssModules.tiketPtext4}>Pulang Pergi</p>
-                  </div>
-                  <div className={cssModules.tiketGrup}>
-                    <input type="date" className={cssModules.tiketDate} />
-                  </div>
-                </Col>
-                <Col xl={2}>
-                  <Image src="../assets/img/Rounded.png" className={cssModules.imgRounded} />
-                </Col>
-                <Col xl={5}>
-                  <div className={cssModules.tiketGrup}>
-                    <p className={cssModules.tiketPtext3}>Tujuan</p>
-                    <input className={cssModules.tiketInput} placeholder="Surabaya"></input>
-                  </div>
-                  <div className={cssModules.tiketGrup2}>
-                    <p className={cssModules.tiketPtext3}>Dewasa</p>
-                    <p className={cssModules.tiketPtext5}>Bayi</p>
-                  </div>
-                   <div className={cssModules.tiketSelectP}>
-                    <div className={cssModules.tiketGrup}>
-                      <select className={cssModules.tiketSelect}>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                    <div className={cssModules.tiketGrup}>
-                      <select className={cssModules.tiketSelect}>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                      </select>
-                    </div>
-                    <div>
-                        <Button className={cssModules.btnCari}>Cari Tiket</Button>
-                    </div>
-                  </div>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Container>
-      </div>
+      <Jumbotron />
+      <FormTiket />
+      <Container>
+        <Row style = {{marginLeft:"1rem"}}>
+          <Col xs={2}>
+            <p>Nama Kereta</p>
+          </Col>
+          <Col xs={2}>
+            <p>Berangkat</p>
+          </Col>
+          <Col xs={2}>
+            <p>Tiba</p>
+          </Col>
+          <Col xs={2}>
+            <p>Durasi</p>
+          </Col>
+          <Col s={2}>
+            <p>Harga Per Orang</p>
+          </Col>
+        </Row>
+      </Container>
+      <Rute />
+      <Rute />
+      <Rute />
     </>
   );
 }

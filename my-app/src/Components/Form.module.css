@@ -1,5 +1,8 @@
 @import url("https://fonts.cdnfonts.com/css/avenir");
 /* navigasi */
+* {
+  font-family: Avenir;
+}
 .navbar {
   background: #fff;
   box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.25);
@@ -10,9 +13,7 @@
 /* register */
 .container {
   height: 30.625rem;
-
   font-size: 2.25rem;
-  font-family: Avenir;
 }
 
 .scroll {
@@ -40,7 +41,6 @@
   border: 2px solid #b1b1b1;
   color: #b1b1b1;
   font-size: 1.3rem;
-  font-family: Avenir;
   margin: 2.06rem auto;
   flex-shrink: 0;
   width: 80%;
@@ -64,7 +64,6 @@
   background: #fff;
   color: #b1b1b1;
   font-size: 1.125rem;
-  font-family: Avenir;
   margin-top: 20px;
 }
 /* button login */
@@ -100,7 +99,6 @@
   border: 2px solid #b1b1b1;
   color: #b1b1b1;
   font-size: 1.3rem;
-  font-family: Avenir;
   margin: 2.06rem auto;
   flex-shrink: 0;
   width: 80%;
@@ -117,7 +115,6 @@
 .homeText {
   color: #fff;
   font-size: 2.25rem;
-  font-family: Avenir;
   font-weight: 900;
   margin-top: 3.37rem;
 }
@@ -126,7 +123,6 @@
   color: #fff;
   margin-bottom: 0.25rem;
   font-size: 1.5rem;
-  font-family: Avenir;
 }
 
 .homeImage1 {
@@ -205,7 +201,6 @@
 .tiketPtext {
   color: #000;
   font-size: 1.125rem;
-  font-family: Avenir;
   font-weight: 300;
   position: relative;
   left: 1.5rem;
@@ -215,7 +210,6 @@
 .tiketPtext2 {
   color: #000;
   font-size: 1.125rem;
-  font-family: Avenir;
   font-weight: 300;
   margin-top: 0.5rem;
   margin-bottom: 0.1rem;
@@ -224,7 +218,6 @@
 .tiketPtext3 {
   color: #000;
   font-size: 1.125rem;
-  font-family: Avenir;
   font-weight: 800;
   margin-top: 0.5rem;
 }
@@ -260,7 +253,6 @@
 .tiketPtext4 {
   color: #000;
   font-size: 1.125rem;
-  font-family: Avenir;
   font-weight: 800;
   margin-top: 0.5rem;
   position: relative;
@@ -271,7 +263,6 @@
 .tiketPtext5 {
   color: #000;
   font-size: 1.125rem;
-  font-family: Avenir;
   font-weight: 800;
   margin-top: 0.5rem;
   position: relative;
@@ -294,7 +285,6 @@
   top: -5rem;
   color: #b1b1b1;
   font-size: 1.125rem;
-  font-family: Avenir;
 }
 
 .tiketSelect {
@@ -308,7 +298,6 @@
   margin-right: 1rem;
   color: #b1b1b1;
   font-size: 1.125rem;
-  font-family: Avenir;
 }
 
 .tiketSelectP {
@@ -326,6 +315,56 @@
   margin-top: -2.52rem;
   color: #fff;
   text-align: center;
-  font-family: Avenir;
   font-weight: 900;
+}
+
+/* Rute */
+.ruteContainer {
+  border-radius: 5px;
+  border: 1px solid #b7b7b7;
+  width: 79.6875rem;
+  height: 6.25rem;
+  flex-shrink: 0;
+  margin-bottom: 2rem;
+}
+
+.ruteText {
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 900;
+  margin: 1rem;
+}
+
+.ruteText2 {
+  color: #b7b7b7;
+  font-size: 0.875rem;
+  margin-top: -1rem;
+  margin-left: 1rem;
+}
+.ruteTextGeser {
+  color: #000;
+  font-size: 1.125rem;
+  font-weight: 900;
+  margin: 1rem;
+  margin-left: -11rem;
+}
+
+.ruteText2Geser {
+  color: #b7b7b7;
+  font-size: 0.875rem;
+  margin-top: -1rem;
+  margin-left: -11.3rem;
+}
+
+.ruteImage {
+  margin-left: -4rem;
+  margin-top: 2rem;
+}
+
+.ruteTextGeserPink {
+  color: #ec7a7a;
+  font-size: 1.125rem;
+  font-weight: 900;
+  margin: 1rem;
+  margin-left: -11rem;
 }
