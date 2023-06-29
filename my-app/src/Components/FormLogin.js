@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button, Container } from "react-bootstrap";
 import { Modal } from "react-bootstrap";
 
-import cssModules from "./Form.module.css";
+import cssModules from "../css/RegisterLogin.module.css";
 
 function FormLogin() {
   const [tampil, setTampil] = useState(false);

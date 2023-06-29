@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import cssModules from "./Form.module.css";
+import cssModules from "../css/Jumbotron.module.css";
 import Image from "react-bootstrap/Image";
 
 function Jumbotron() {

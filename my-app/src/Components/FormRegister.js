@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Button, Container } from "react-bootstrap";
 import { Modal, Dialog } from "react-bootstrap/";
 
-import cssModules from "./Form.module.css";
+import cssModules from "../css/RegisterLogin.module.css";
 
 function FormRegister() {
   const [tampil, setTampil] = useState(false);

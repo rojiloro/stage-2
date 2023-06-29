@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
-import cssModules from "../Components/Form.module.css";
+import cssModules from "../css/Rute.module.css";
 
 function Rute(props) {
   return (

@@ -1,6 +1,6 @@
 import Button from "react-bootstrap/Button";
 import { Container, Row, Col } from "react-bootstrap";
-import cssModules from "../Components/Form.module.css";
+import cssModules from "../css/Tiket.module.css";
 import Image from "react-bootstrap/Image";
 
 function FormTiket() {

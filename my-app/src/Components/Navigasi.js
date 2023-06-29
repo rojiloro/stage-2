@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 
-import cssModules from "./Form.module.css";
+import cssModules from "../css/Navbar.module.css";
 
 import FormLogin from "./FormLogin";
 import FormRegister from "./FormRegister";
