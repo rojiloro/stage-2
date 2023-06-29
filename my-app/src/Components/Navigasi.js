@@ -4,13 +4,16 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
+import { Button } from "react-bootstrap";
 
 import cssModules from "../css/Navbar.module.css";
 
 import FormLogin from "./FormLogin";
 import FormRegister from "./FormRegister";
 
-import Home from "../Pages/Home"
+import Home from "../Pages/Home";
+import Cetak from "../Pages/Cetak";
+
 function Navigasi() {
   return (
     <>
@@ -21,7 +24,9 @@ function Navigasi() {
               <Image src="../assets/img/Land Tick.png" />
               <Image src="../assets/img/train-facing-right 1.png" />
             </Link>
-            {/* <img src=""></img> */}
+            <Link to="/cetak">
+              <Button>Cetak Tiket</Button>
+            </Link>
           </Navbar.Brand>
           <Nav>
             <Nav.Link>
@@ -33,9 +38,10 @@ function Navigasi() {
           </Nav>
         </Container>
       </Navbar>
-      
+
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/cetak" element={<Cetak />} />
       </Routes>
     </>
   );
