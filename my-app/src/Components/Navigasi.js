@@ -12,7 +12,7 @@ import FormRegister from "./FormRegister";
 
 import Home from "../Pages/Home";
 import Cetak from "../Pages/Cetak";
-import Invoice from "../Pages/Invoice"
+import Invoice from "../Pages/Invoice";
 import { Button } from "react-bootstrap";
 
 function Navigasi() {
@@ -44,7 +44,6 @@ function Navigasi() {
         <Route path="/" element={<Home />} />
         <Route path="/cetak" element={<Cetak />} />
         <Route path="/invoice" element={<Invoice />} />
-        
       </Routes>
     </>
   );
