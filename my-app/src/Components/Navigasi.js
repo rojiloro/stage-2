@@ -21,7 +21,7 @@ function Navigasi() {
         <Container>
           <Navbar.Brand>
             <Link to="/">
-              <Image src="../assets/img/Land Tick.png" />
+              <Image src="../assets/img/Land Tick1.png" />
               <Image src="../assets/img/train-facing-right 1.png" />
             </Link>
             <Link to="/cetak">

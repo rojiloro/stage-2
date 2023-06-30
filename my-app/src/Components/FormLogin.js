@@ -23,7 +23,7 @@ function FormLogin() {
               <input id="username" type="text" placeholder="Username" className={cssModules.Input} required />
               <input id="password" type="password" placeholder="Password" className={cssModules.Input} required />
               <button className={cssModules.btn}>Login</button>
-              <p className={cssModules.p}>Belum Punya Akun? Klik Disini</p>
+              <p className={cssModules.p}>Belum Punya Akun? <b className={cssModules} onClick={() => setTampil(false)}>Klik Disini</b></p>
             </div>
           </form>
         </Container>
