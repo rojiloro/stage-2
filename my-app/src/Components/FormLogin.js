@@ -10,6 +10,7 @@ function FormLogin() {
 
   const handleClose = () => setTampil(false);
   const handleShow = () => setTampil(true);
+
   return (
     <div>
       <Button className={cssModules.btnLogin} onClick={handleShow}>
@@ -23,7 +24,9 @@ function FormLogin() {
               <input id="username" type="text" placeholder="Username" className={cssModules.Input} required />
               <input id="password" type="password" placeholder="Password" className={cssModules.Input} required />
               <button className={cssModules.btn}>Login</button>
-              <p className={cssModules.p}>Belum Punya Akun? <b className={cssModules} onClick={() => setTampil(false)}>Klik Disini</b></p>
+              <p className={cssModules.p}>
+                Belum Punya Akun? <b className={cssModules.b}>Klik Disini</b>
+              </p>
             </div>
           </form>
         </Container>
