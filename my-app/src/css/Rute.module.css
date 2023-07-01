@@ -11,6 +11,7 @@
   height: 6.25rem;
   flex-shrink: 0;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 
 .ruteText {

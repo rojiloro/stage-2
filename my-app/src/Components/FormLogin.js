@@ -1,5 +1,5 @@
 // import bootstrap
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button, Container } from "react-bootstrap";
 import { Modal } from "react-bootstrap";
 
@@ -25,7 +25,10 @@ function FormLogin() {
               <input id="password" type="password" placeholder="Password" className={cssModules.Input} required />
               <button className={cssModules.btn}>Login</button>
               <p className={cssModules.p}>
-                Belum Punya Akun? <b className={cssModules.b}>Klik Disini</b>
+                Belum Punya Akun?
+                <b className={cssModules.b} onClick={handleClose}>
+                  Klik Disini
+                </b>
               </p>
             </div>
           </form>

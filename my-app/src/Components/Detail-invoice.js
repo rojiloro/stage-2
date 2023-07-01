@@ -1,8 +1,8 @@
 import React from "react";
 import { Button, Container, Modal } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
-import { useState } from "react";
 import { Row, Col } from "react-bootstrap";
+import { useState } from "react";
 
 import cssModules from "../css/invoice.module.css";
 
@@ -13,15 +13,6 @@ function Detailinvoice() {
   const handleShow = () => setShow(true);
   return (
     <>
-      <Button className="mt-1" onClick={handleShow}>
-        Cetak Tiket
-      </Button>
-      <Modal show={show} onHide={handleClose}>
-        <p className="p-4 ">
-          Tiket anda berhasil di tambahkan silakan segera melakukan pembayaran <b style={{ cursor: "pointer" }}>Klik disini</b>
-        </p>
-      </Modal>
-
       <div>
         <Container>
           <p className="fs-3 fw-400 mt-5">Invoice</p>
@@ -151,16 +142,21 @@ function Detailinvoice() {
             <div className={cssModules.total}>
               <Row>
                 <Col m={6}>
-                  <p style = {{fontSize : "1.5rem", marginLeft:"2rem"}}>Total</p>
+                  <p style={{ fontSize: "1.5rem", marginLeft: "2rem" }}>Total</p>
                 </Col>
                 <Col m={6}>
-                  <p style={{fontSize : "1.5rem", fontWeight:"900", marginLeft:"2rem"}}>Rp 250.000</p>
+                  <p style={{ fontSize: "1.5rem", fontWeight: "900", marginLeft: "2rem" }}>Rp 250.000</p>
                 </Col>
               </Row>
             </div>
           </div>
           <div>
-            <Button className={cssModules.btn}>Bayar Sekarang</Button>
+            <Button className={cssModules.btn} onClick={handleShow}>
+              Bayar Sekarang
+            </Button>
+            <Modal show={show} onHide={handleClose}>
+              <h1>ini dari component ticket detail</h1>
+            </Modal>
           </div>
         </Container>
       </div>

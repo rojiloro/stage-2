@@ -7,6 +7,7 @@ import Footer from "../Components/Footer";
 // import react-bootstrap
 import { Container, Row, Col } from "react-bootstrap";
 
+
 function Home() {
   return (
     <>
@@ -31,9 +32,9 @@ function Home() {
           </Col>
         </Row>
       </Container>
-      <Rute Kereta="Argo Wilis" Kelas="Eksekutif" Berangkat="05.00" Stasiun="Gambir" Tiba="16.00" Tujuan="Surabaya" Durasi="11 j 0 m" Harga={250000} />
-      <Rute Kereta="Argo Bromo" Kelas="Premium" Berangkat="06.00" Stasiun="Gambir" Tiba="16.10" Tujuan="Malang" Durasi="10 j 10 m" Harga={350000}/>
-      <Rute Kereta="Serayu malam" Kelas="Ekonomi" Berangkat="21.00" Stasiun="Gambir" Tiba="08.20" Tujuan="Purwokerto" Durasi="11 j 20 m" Harga={67000}/>
+      <Rute Kereta="Argo Bromo" Kelas="Premium" Berangkat="06.00" Stasiun="Gambir" Tiba="16.10" Tujuan="Malang" Durasi="10 j 10 m" Harga={350000}  />
+      <Rute Kereta="Argo Bromo" Kelas="Premium" Berangkat="06.00" Stasiun="Gambir" Tiba="16.10" Tujuan="Malang" Durasi="10 j 10 m" Harga={350000} />
+      <Rute Kereta="Serayu malam" Kelas="Ekonomi" Berangkat="21.00" Stasiun="Gambir" Tiba="08.20" Tujuan="Purwokerto" Durasi="11 j 20 m" Harga={67000} />
       <Footer />
     </>
   );

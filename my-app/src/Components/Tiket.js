@@ -3,6 +3,7 @@ import Image from "react-bootstrap/Image";
 
 import { Container, Row, Col, Button } from "react-bootstrap";
 import cssModules from "../css/Cetak.module.css";
+import { Link } from "react-router-dom";
 
 function Tiket() {
   return (
@@ -66,7 +67,7 @@ function Tiket() {
                 </div>
               </Col>
             </Row>
-            <hr className={cssModules.Identitas} style={{width:"75%"}}/>
+            <hr className={cssModules.Identitas} style={{ width: "75%" }} />
             <Row>
               <Col s={2}>
                 <p className={cssModules.text3}>31175033003970001</p>
@@ -83,7 +84,9 @@ function Tiket() {
                 </div>
               </Col>
               <Col s={2}>
-                <Button className={cssModules.btn}>Bayar Sekarang</Button>
+                <Link to="/invoice">
+                  <Button className={cssModules.btn}>Bayar Sekarang</Button>
+                </Link>
               </Col>
             </Row>
           </div>

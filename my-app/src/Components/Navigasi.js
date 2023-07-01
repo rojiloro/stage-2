@@ -9,10 +9,7 @@ import cssModules from "../css/Navbar.module.css";
 
 import FormLogin from "./FormLogin";
 import FormRegister from "./FormRegister";
-
-import Home from "../Pages/Home";
-import Cetak from "../Pages/Cetak";
-import Invoice from "../Pages/Invoice";
+import Admin from "../Pages/Admin";
 import { Button } from "react-bootstrap";
 
 function Navigasi() {
@@ -25,6 +22,9 @@ function Navigasi() {
               <Image src="../assets/img/Land Tick1.png" />
               <Image src="../assets/img/train-facing-right 1.png" />
             </Link>
+            <Link to="/admin">
+              <Button variant="danger">Admin</Button>
+            </Link>
           </Navbar.Brand>
           <Nav>
             <Nav.Link>
@@ -36,12 +36,6 @@ function Navigasi() {
           </Nav>
         </Container>
       </Navbar>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cetak" element={<Cetak />} />
-        <Route path="/invoice" element={<Invoice />} />
-      </Routes>
     </>
   );
 }
