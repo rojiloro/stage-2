@@ -1,24 +1,15 @@
 // import bootstrap
 
-import { useState } from "react";
 import { Button, Container } from "react-bootstrap";
 import { Modal } from "react-bootstrap/";
 
 import cssModules from "../css/RegisterLogin.module.css";
 
-export default function FormRegister() {
-  const [tampil, setTampil] = useState(false);
-
-  const handleClose = () => setTampil(false);
-  const handleShow = () => setTampil(true);
-
+export default function FormRegister({ show, showDaftar }) {
+  const handleClose = () => showDaftar(false);
   return (
     <div>
-      <Button className={cssModules.btnRegister} onClick={handleShow}>
-        Register
-      </Button>
-
-      <Modal show={tampil} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose}>
         <Container className={cssModules.container}>
           <form className="text-center mb-5">
             <div className={cssModules.scroll}>

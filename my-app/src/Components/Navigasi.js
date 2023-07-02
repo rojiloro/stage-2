@@ -4,15 +4,19 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
+import { useState } from "react";
 
 import cssModules from "../css/Navbar.module.css";
 
 import FormLogin from "./FormLogin";
 import FormRegister from "./FormRegister";
-import Admin from "../Pages/Admin";
+// import Admin from "../Pages/Admin";
 import { Button } from "react-bootstrap";
 
-function Navigasi() {
+function Navigasi(props) {
+  const [ShowLogin, setShowLogin] = useState(false);
+  const [ShowDaftar, setShowDaftar] = useState(false);
+
   return (
     <>
       <Navbar className={cssModules.navbar}>
@@ -28,14 +32,20 @@ function Navigasi() {
           </Navbar.Brand>
           <Nav>
             <Nav.Link>
-              <FormLogin />
+              <Button className={cssModules.btnLogin} onClick={() => setShowLogin(true)}>
+                Login
+              </Button>
             </Nav.Link>
             <Nav.Link>
-              <FormRegister />
+              <Button className={cssModules.btnRegister} onClick={() => setShowDaftar(true)}>
+                Register
+              </Button>
             </Nav.Link>
           </Nav>
         </Container>
       </Navbar>
+      <FormLogin show={ShowLogin} showLogin={setShowLogin} showDaftar={setShowDaftar} />
+      <FormRegister show={ShowDaftar} showDaftar={setShowDaftar} />
     </>
   );
 }

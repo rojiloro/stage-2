@@ -10,6 +10,7 @@
 
 .b {
   cursor: pointer;
+  font-weight: bold;
 }
 
 .scroll {

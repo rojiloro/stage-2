@@ -10,3 +10,27 @@
   height: 3.75rem;
   flex-shrink: 0;
 }
+
+.btnLogin {
+  background: linear-gradient(180deg, #ec7ab7 0%, #ec7a7a 100%);
+  border-radius: 5px;
+  width: 7rem;
+  height: 2.5625rem;
+  flex-shrink: 0;
+  border: none;
+}
+/* button register */
+.btnRegister {
+  background: white;
+  color: #ec7ab7;
+  border-radius: 5px;
+  width: 7rem;
+  height: 2.5625rem;
+  flex-shrink: 0;
+  border: 1px solid #ec7ab7;
+}
+
+.btnRegister:hover {
+  background: linear-gradient(180deg, #ec7ab7 0%, #ec7a7a 100%);
+  border: none;
+}

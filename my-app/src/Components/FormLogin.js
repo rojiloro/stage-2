@@ -1,22 +1,20 @@
 // import bootstrap
-import { useEffect, useState } from "react";
-import { Button, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { Modal } from "react-bootstrap";
 
 import cssModules from "../css/RegisterLogin.module.css";
 
-function FormLogin() {
-  const [tampil, setTampil] = useState(false);
+function FormLogin({ show, showLogin, showDaftar }) {
+  const handleClose = () => showLogin(false);
 
-  const handleClose = () => setTampil(false);
-  const handleShow = () => setTampil(true);
+  const SwitchKlik = () => {
+    handleClose();
+    showDaftar(true);
+  };
 
   return (
     <div>
-      <Button className={cssModules.btnLogin} onClick={handleShow}>
-        Login
-      </Button>
-      <Modal show={tampil} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose}>
         <Container>
           <form className="text-center mb-5">
             <div>
@@ -25,10 +23,10 @@ function FormLogin() {
               <input id="password" type="password" placeholder="Password" className={cssModules.Input} required />
               <button className={cssModules.btn}>Login</button>
               <p className={cssModules.p}>
-                Belum Punya Akun?
-                <b className={cssModules.b} onClick={handleClose}>
+                Belum Punya Akun?{" "}
+                <span className={cssModules.b} onClick={SwitchKlik}>
                   Klik Disini
-                </b>
+                </span>
               </p>
             </div>
           </form>
