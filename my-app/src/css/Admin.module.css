@@ -202,3 +202,52 @@
   margin-top: -3rem;
   margin-left: 20rem;
 }
+
+/* modal edit admin */
+.inputAbu2 {
+  width: 21.875rem;
+  height: 3.0625rem;
+  flex-shrink: 0;
+  border-radius: 0.3125rem;
+  border: 2px solid #b1b1b1;
+  background: rgba(196, 196, 196, 0.5);
+  margin: 5.18rem auto 2.13rem auto;
+}
+
+.inputwhite {
+  width: 21.875rem;
+  height: 3.0625rem;
+  flex-shrink: 0;
+  border-radius: 0.3125rem;
+  border: 2px solid #b1b1b1;
+  margin: 5.18rem auto 2.13rem auto;
+}
+
+.textInput {
+  display: flex;
+  height: 1.715rem;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #b1b1b1;
+  font-size: 1.5rem;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0.69rem 0.56rem;
+}
+
+.anjir {
+  display: flex;
+  width: 13.6875rem;
+  height: 1.6875rem;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #000;
+  font-size: 1.5rem;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0.69rem 0.56rem;
+}

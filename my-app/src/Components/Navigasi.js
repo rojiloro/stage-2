@@ -26,9 +26,6 @@ function Navigasi(props) {
               <Image src="../assets/img/Land Tick1.png" />
               <Image src="../assets/img/train-facing-right 1.png" />
             </Link>
-            <Link to="/admin">
-              <Button variant="danger">Admin</Button>
-            </Link>
           </Navbar.Brand>
           <Nav>
             <Nav.Link>

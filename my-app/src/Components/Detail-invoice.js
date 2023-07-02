@@ -155,7 +155,19 @@ function Detailinvoice() {
               Bayar Sekarang
             </Button>
             <Modal show={show} onHide={handleClose}>
-              <h1>ini dari component ticket detail</h1>
+              <Container>
+                <div className={cssModules.title}>
+                  <p>E-Ticket</p>
+                </div>
+                <div className={cssModules.shape2}>
+                  <Image src="../assets/img/Land Tick.png" />
+                  <Image src="../assets/img/train-facing-right 2.png" />
+                </div>
+
+                <div>
+                  <p>Kode Invoice : INV0101</p>
+                </div>
+              </Container>
             </Modal>
           </div>
         </Container>
