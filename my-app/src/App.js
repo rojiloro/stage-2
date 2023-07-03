@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Cetak from "./Pages/Cetak";
 import Invoice from "./Pages/Invoice";
-import Admin from "./Pages/Admin";
+import AdminIndex from "./Pages/AdminIndex";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cetak" element={<Cetak />} />
         <Route path="/invoice" element={<Invoice />} />
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/adminindex" element={<AdminIndex />} />
       </Routes>
     </>
   );

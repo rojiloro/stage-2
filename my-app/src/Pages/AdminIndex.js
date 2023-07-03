@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import cssModules from "../css/Admin.module.css";
-import TableAdmin from "./TableAdmin";
-import Footer from "./Footer"
+import TableAdmin from "../Components/TableAdmin";
+import Footer from "../Components/Footer"
 
 function AdminIndex() {
   return (
