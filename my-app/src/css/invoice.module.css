@@ -242,6 +242,56 @@
   flex-shrink: 0;
   background: linear-gradient(90deg, #ec7ab7 0%, #ec7a7a 100%);
   padding-left: 2rem;
-  margin-left: 18.8rem;
+  margin-left: 15.5rem;
   margin-top: -5.21rem;
+}
+
+.inv {
+  color: #767676;
+  font-size: 14px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 1rem;
+  margin-left: 0.3rem;
+}
+
+.api {
+  color: #000;
+  font-size: 36px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.februari {
+  color: #878787;
+  font-size: 16px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-top: -1.3rem;
+}
+
+.wilis {
+  color: #000;
+  font-size: 24px;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-top: 3rem;
+}
+
+.ekse {
+  color: #000;
+  font-size: 0.875rem;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -0.5rem;
 }

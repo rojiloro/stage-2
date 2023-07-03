@@ -156,16 +156,31 @@ function Detailinvoice() {
             </Button>
             <Modal show={show} onHide={handleClose}>
               <Container>
-                <div className={cssModules.title}>
-                  <p>E-Ticket</p>
-                </div>
-                <div className={cssModules.shape2}>
-                  <Image src="../assets/img/Land Tick.png" />
-                  <Image src="../assets/img/train-facing-right 2.png" />
-                </div>
+                <div style={{marginLeft:"3.25rem"}}>
+                  <div className={cssModules.title}>
+                    <p>E-Ticket</p>
+                  </div>
+                  <div className={cssModules.shape2}>
+                    <Image src="../assets/img/Land Tick.png" />
+                    <Image src="../assets/img/train-facing-right 2.png" />
+                  </div>
 
-                <div>
-                  <p>Kode Invoice : INV0101</p>
+                  <div className={cssModules.inv}>
+                    <p>Kode Invoice : INV0101</p>
+                  </div>
+                  <div className={cssModules.api}>
+                    <p>Kereta Api</p>
+                  </div>
+                  <div className={cssModules.februari}>
+                    <p>Saturday, 21 Febuari 2020</p>
+                  </div>
+                  <div className={cssModules.wilis}>
+                    <p>Argo Wilis</p>
+                  </div>
+                  <div className={cssModules.ekse}>
+                    <p>Eksekutif (H)</p>
+                  </div>
+                  <Image style={{marginLeft : "18rem", marginTop : "-13rem"}} src = "../assets/img/qr-code 1.png"></Image>
                 </div>
               </Container>
             </Modal>
