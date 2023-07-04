@@ -156,7 +156,7 @@ function Detailinvoice() {
             </Button>
             <Modal show={show} onHide={handleClose}>
               <Container>
-                <div style={{marginLeft:"3.25rem"}}>
+                <div style={{ marginLeft: "3.25rem" }}>
                   <div className={cssModules.title}>
                     <p>E-Ticket</p>
                   </div>
@@ -180,7 +180,43 @@ function Detailinvoice() {
                   <div className={cssModules.ekse}>
                     <p>Eksekutif (H)</p>
                   </div>
-                  <Image style={{marginLeft : "18rem", marginTop : "-13rem"}} src = "../assets/img/qr-code 1.png"></Image>
+                  <div>
+                    <div className={cssModules.bulat} style={{ marginLeft: "-3rem" }}></div>
+                    <div className={cssModules.garis} style={{ marginLeft: "-2rem" }}></div>
+                    <div className={cssModules.bulat2} style={{ marginLeft: "-2rem" }}></div>
+                  </div>
+                  <div>
+                    <p className={cssModules.jam}>05.00</p>
+                    <p className={cssModules.date}>21 Febuari 2020</p>
+                  </div>
+                  <div style={{ marginTop: "2rem", marginLeft: "2rem" }}>
+                    <p className={cssModules.jam} style={{ marginLeft: "-0.2rem" }}>
+                      10.05
+                    </p>
+                    <p className={cssModules.date} style={{ marginLeft: "0rem" }}>
+                      21 Febuari 2020
+                    </p>
+                  </div>
+                  <div style={{ marginLeft: "10rem", marginTop: "-9.5rem" }}>
+                    <div>
+                      <p className={cssModules.jam}>Jakarta</p>
+                      <p className={cssModules.date}>Stasiun Jakarta</p>
+                    </div>
+                    <div style={{ marginTop: "2rem", marginLeft: "2rem" }}>
+                      <p className={cssModules.jam} style={{ marginLeft: "-0.2rem" }}>
+                        Surabaya
+                      </p>
+                      <p className={cssModules.date} style={{ marginLeft: "0rem" }}>
+                        Stasiun Surabaya
+                      </p>
+                    </div>
+                  </div>
+                  <Image style={{ marginLeft: "20rem", marginTop: "-28rem", width: "4.5rem", height: "4.5rem", flexBasis: "0" }} src="../assets/img/qr-code 1.png"></Image>
+                </div>
+                <hr></hr>
+                <div>
+                  <Image src="../assets/img/pass 1.png" style={{width: "2.5rem", height: "2.5rem", flexShrink: "0"}}/>
+                  <p>Tunjukkan e-ticket dan identitas para penumpang saat checkin</p>
                 </div>
               </Container>
             </Modal>

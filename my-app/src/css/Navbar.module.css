@@ -34,3 +34,14 @@
   background: linear-gradient(180deg, #ec7ab7 0%, #ec7a7a 100%);
   border: none;
 }
+
+.user {
+  color: #ec7ab7;
+  font-size: 1.5rem;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}

@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Container from "react-bootstrap/Container";
+import { Dropdown, Nav, Navbar, Container } from "react-bootstrap";
+
 import Image from "react-bootstrap/Image";
 import { useState, useContext } from "react";
 
@@ -41,21 +40,57 @@ function Navigasi(props) {
             <>
               {state.status ? (
                 <>
-                  <p>{state.user}</p>
-                  <Link to={"/"}>
-                    <Button variant="danger" onClick={logout}>
-                      Log out
-                    </Button>
-                  </Link>
+                  <p className={cssModules.user}>{state.user}</p>
+                  <Dropdown>
+                    <Dropdown.Toggle style={{ background: "none", border: "none" }}>
+                      <Image src="../assets/img/boy 1.png" className="border border-4 rounded-circle" style={{ width: "40px", height: "40px", marginTop: "0.6rem", cursor: "pointer" }} />
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      <Dropdown.Item>
+                        <Link to="/addticket" style={{ display: "flex", textDecoration: "none" }}>
+                          <Image src="../assets/img/more 1.png" style={{ width: "40px", height: "40px", marginTop: "0.6rem", cursor: "pointer" }} />
+                          <p style={{ marginLeft: "1rem", marginTop: "1rem" }}>Tiket Saya</p>
+                        </Link>
+                      </Dropdown.Item>
+                      <Dropdown.Item>
+                        <hr></hr>
+                        <Link to="/" onClick={logout} style={{ display: "flex", textDecoration: "none" }}>
+                          <Image src="../assets/img/logout 1.png" style={{ width: "40px", height: "40px", marginTop: "0.6rem", cursor: "pointer" }} />
+                          <p style={{ marginLeft: "1rem", marginTop: "1rem" }}>Log Out</p>
+                        </Link>
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
                 </>
               ) : state.isLogin ? (
                 <>
-                  <p>{state.user}</p>
-                  <Link to={"/"}>
-                    <Button variant="danger" onClick={logout}>
-                      Log out
-                    </Button>
-                  </Link>
+                  <p className={cssModules.user}>{state.user}</p>
+                  <Dropdown>
+                    <Dropdown.Toggle style={{ background: "none", border: "none" }}>
+                      <Image src="../assets/img/boy 1.png" className="border border-4 rounded-circle" style={{ width: "40px", height: "40px", marginTop: "0.6rem", cursor: "pointer" }} />
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      <Dropdown.Item>
+                        <Link to="/cetak" style={{ display: "flex", textDecoration: "none" }}>
+                          <Image src="../assets/img/ticket 1.png" style={{ width: "40px", height: "40px", marginTop: "0.6rem", cursor: "pointer" }} />
+                          <p style={{ marginLeft: "1rem", marginTop: "1rem" }}>Tiket Saya</p>
+                        </Link>
+                      </Dropdown.Item>
+                      <Dropdown.Item>
+                        <Link to="/invoice" style={{ display: "flex", textDecoration: "none" }}>
+                          <Image src="../assets/img/bill 1.png" style={{ width: "40px", height: "40px", marginTop: "0.6rem", cursor: "pointer" }} />
+                          <p style={{ marginLeft: "1rem", marginTop: "1rem" }}>Payment</p>
+                        </Link>
+                      </Dropdown.Item>
+                      <Dropdown.Item>
+                        <hr></hr>
+                        <Link to="/" onClick={logout} style={{ display: "flex", textDecoration: "none" }}>
+                          <Image src="../assets/img/logout 1.png" style={{ width: "40px", height: "40px", marginTop: "0.6rem", cursor: "pointer" }} />
+                          <p style={{ marginLeft: "1rem", marginTop: "1rem" }}>Log Out</p>
+                        </Link>
+                      </Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
                 </>
               ) : (
                 <>

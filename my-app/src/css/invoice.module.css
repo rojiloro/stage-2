@@ -295,3 +295,25 @@
   line-height: normal;
   margin-top: -0.5rem;
 }
+
+.jam {
+  color: #000;
+  font-size: 1.125rem;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  margin-left: 2rem;
+  margin-top: 1.8rem;
+}
+
+.date {
+  color: #959595;
+  font-size: 0.875rem;
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: -1rem;
+  margin-left: 2rem;
+}
